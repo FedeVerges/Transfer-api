@@ -1,18 +1,20 @@
 package unsl.entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Ping {
 
-	private String ping;
+    @JsonProperty("ping")
+    private String ping;
 
-	public Ping(String ping){
-		this.ping = ping;
-	}
-
-	public String getPing() {
+    public String getPing() {
         return ping;
     }
 
     public void setPing(String ping) {
         this.ping = ping;
     }
+
 }

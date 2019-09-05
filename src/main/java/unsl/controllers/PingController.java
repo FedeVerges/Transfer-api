@@ -12,7 +12,8 @@ public class PingController {
     @GetMapping(value = "/ping")
     @ResponseBody
     public Object ping() {
-    	Ping ping = new Ping("pong");
+        Ping ping = new Ping();
+        ping.setPing("pong");
         return ping;
     }
 }
