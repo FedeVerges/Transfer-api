@@ -24,11 +24,11 @@ public class Account {
 
     private double account_balance;
 
-    @JsonProperty("holder")
+    @JsonProperty("titular")
     private Long holder;
 
     @Enumerated(EnumType.STRING)
-    @JsonProperty("currency")
+    @JsonProperty("tipo_moneda")
     private Currency currency;
 
     @Enumerated(EnumType.STRING)
